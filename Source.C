@@ -13,21 +13,21 @@ int main()
 {
 	int Sum = 0, Bias = 0, LED;
 
-	printf("Assinale o BIAS de configuração: \n");
+	printf("Assinale o BIAS de configuraÃ§Ã£o: \n");
 	scanf_s("%d", &Bias);
 
 	for (size_t i = 0; i < 6; i++)
 	{
 		Laser[i].ID = i + 1;
-		printf("Digite a configuração do laser %d:", Laser[i].ID);
+		printf("Digite a configuraÃ§Ã£o do laser %d:", Laser[i].ID);
 		scanf_s("%d", &Laser[i].xcfg);
 		clear
-		printf("O laser %d está ajustado em %d. \n", Laser[i].ID, Laser[i].xcfg);
+		printf("O laser %d estÃ¡ ajustado em %d. \n", Laser[i].ID, Laser[i].xcfg);
 		system("pause");
 		clear
 	}
 
-	printf("Configurações finais dos lasers\n");
+	printf("ConfiguraÃ§Ãµes finais dos lasers\n");
 	for (size_t i = 0; i < 6; i++)
 	{
 		Sum += Laser[i].xcfg;
@@ -44,4 +44,5 @@ int main()
 	printf("Estado do LED: %d\n(0- Desligado, 1- Ligado)", LED);
 
 	return;
+
 }
